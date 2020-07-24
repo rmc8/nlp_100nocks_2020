@@ -4,7 +4,7 @@ def shuffle_word(word):
         return word
     
     shuffle = ""
-    rnd_num = "".join(str(n) for n in range(word_length))
+    rnd_num = "".join(map(str, range(word_length)))
     for i in set(rnd_num):
         num = int(i)
         shuffle += word[num]
