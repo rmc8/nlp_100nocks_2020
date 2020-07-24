@@ -1,6 +1,6 @@
 def cipher(txt):
     def helper(s):
-        if s.islower() :
+        if s.islower():
             return chr(219 - ord(s))
         return s
     
