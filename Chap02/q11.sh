@@ -1,0 +1,1 @@
+sed -e 's/[[:cntrl:]]/ /g' ./popular-names.txt >> ./q11.txt
