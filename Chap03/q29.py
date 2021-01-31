@@ -82,7 +82,7 @@ for key, val in templates.items():
 
 file_name = templates["国旗画像"]
 url = "https://www.mediawiki.org/w/api.php?action=query&titles=File:" \
-      + parse.quote(templates['国旗画像']) \
+      + parse.quote(file_name) \
       + "&format=json&prop=imageinfo&iiprop=url"
 
 conn = request.urlopen(request.Request(url))
